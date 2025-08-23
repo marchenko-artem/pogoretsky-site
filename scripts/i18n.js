@@ -1,4 +1,4 @@
-const I18N={supported:['de','en','pl','ru','uk'],current:'en',dict:{},
+const I18N={supported:['de','en','pl','ru','uk'],current:'de',dict:{},
 async load(lang){
   if(!this.supported.includes(lang)) lang='en';
   try{
@@ -16,7 +16,7 @@ async load(lang){
 },
 init(){
   const saved=localStorage.getItem('lang');
-  const initial=(saved||(navigator.language||'en').slice(0,2));
+  const initial=(saved||(navigator.language||'de').slice(0,2));
   this.load(initial);
   const select=document.querySelector('#lang');
   if(select){

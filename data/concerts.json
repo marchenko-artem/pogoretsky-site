@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "dateTimeStart": "2025-10-15T19:30:00",
+    "city": "München",
+    "country": "DE",
+    "venue": "Herkulessaal",
+    "program": "Beethoven Violin Concerto, op. 61",
+    "ticketUrl": "",
+    "moreInfoUrl": ""
+  },
+  {
+    "dateTimeStart": "2025-11-02T20:00:00",
+    "city": "Warszawa",
+    "country": "PL",
+    "venue": "Filharmonia Narodowa",
+    "program": "Szymanowski Mythes, op. 30",
+    "ticketUrl": "",
+    "moreInfoUrl": ""
+  },
+  {
+    "dateTimeStart": "2025-12-05T19:00:00",
+    "city": "Zürich",
+    "country": "CH",
+    "venue": "Tonhalle",
+    "program": "Bruch Violin Concerto No. 1",
+    "ticketUrl": "",
+    "moreInfoUrl": ""
+  }
+]

@@ -1,1 +1,75 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><title>press.html</title><link rel='stylesheet' href='styles/main.css'><script defer src='scripts/i18n.js'></script></head><body><header><div class='container nav'><a href='index.html' data-i18n='nav.home'>Home</a></div></header><main class='section'><div class='container'><h1>Press</h1></div></main></body></html>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Press — Pogoretsky</title>
+    <link rel="icon" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script defer src="scripts/i18n.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" data-i18n="nav.home" data-i18n="nav.home">Home</a>
+        <a
+          href="concerts.html"
+          data-i18n="nav.concerts"
+          data-i18n="nav.concerts"
+          >Concerts</a
+        >
+        <a href="about.html" data-i18n="nav.about" data-i18n="nav.about"
+          >About</a
+        >
+        <a href="media.html" data-i18n="nav.media" data-i18n="nav.media"
+          >Media</a
+        >
+        <a href="press.html" data-i18n="nav.press" data-i18n="nav.press"
+          >Press</a
+        >
+        <a href="contact.html" data-i18n="nav.contact" data-i18n="nav.contact"
+          >Contact</a
+        >
+
+        <select id="lang" class="lang-select">
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+          <option value="pl">PL</option>
+          <option value="ru">RU</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h1 data-i18n="nav.press" data-i18n="nav.press">Press</h1>
+
+      <h2>Quotes</h2>
+      <div class="cards">
+        <article class="card">
+          <em>“A violinist of striking poise and depth.”</em><br /><small
+            >— The Times</small
+          >
+        </article>
+        <article class="card">
+          <em>“Virtuosic and heartfelt.”</em><br /><small
+            >— Frankfurter Allgemeine</small
+          >
+        </article>
+      </div>
+
+      <h2>Press Kit</h2>
+      <ul>
+        <li>
+          <a href="assets/press/Pohoretskyi_Bio_EN.pdf">Biography (EN, PDF)</a>
+        </li>
+        <li><a href="assets/press/Photos_HiRes.zip">Press photos (ZIP)</a></li>
+        <li><a href="assets/press/Tech_Rider.pdf">Technical rider (PDF)</a></li>
+      </ul>
+      <p>
+        <small>Links are placeholders — replace with your actual files.</small>
+      </p>
+    </main>
+  </body>
+</html>

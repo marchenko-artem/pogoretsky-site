@@ -1,1 +1,81 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><title>contact.html</title><link rel='stylesheet' href='styles/main.css'><script defer src='scripts/i18n.js'></script></head><body><header><div class='container nav'><a href='index.html' data-i18n='nav.home'>Home</a></div></header><main class='section'><div class='container'><h1>Contact</h1></div></main></body></html>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Pogoretsky</title>
+    <link rel="icon" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script>
+      function sendContact(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = Object.fromEntries(new FormData(form).entries());
+        // Placeholder: open mailto (can be replaced with EmailJS/Resend)
+        const subject = encodeURIComponent("Booking/Inquiry from website");
+        const body = encodeURIComponent(
+          `Name: ${data.name}\nOrg: ${data.org}\nEmail: ${data.email}\nPhone: ${data.phone}\nCity/Country: ${data.city}\nEvent date: ${data.date}\nMessage:\n${data.message}`
+        );
+        window.location.href = `mailto:booking@pogoretsky.com?subject=${subject}&body=${body}`;
+      }
+    </script>
+    <script defer src="scripts/i18n.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" data-i18n="nav.home" data-i18n="nav.home">Home</a>
+        <a
+          href="concerts.html"
+          data-i18n="nav.concerts"
+          data-i18n="nav.concerts"
+          >Concerts</a
+        >
+        <a href="about.html" data-i18n="nav.about" data-i18n="nav.about"
+          >About</a
+        >
+        <a href="media.html" data-i18n="nav.media" data-i18n="nav.media"
+          >Media</a
+        >
+        <a href="press.html" data-i18n="nav.press" data-i18n="nav.press"
+          >Press</a
+        >
+        <a href="contact.html" data-i18n="nav.contact" data-i18n="nav.contact"
+          >Contact</a
+        >
+
+        <select id="lang" class="lang-select">
+          <option value="de">DE</option>
+          <option value="en">EN</option>
+          <option value="pl">PL</option>
+          <option value="ru">RU</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="section container">
+      <h1 data-i18n="nav.contact" data-i18n="nav.contact">Contact</h1>
+
+      <form class="card" onsubmit="sendContact(event)">
+        <label>Name<input name="name" type="text" required /></label>
+        <label>Organization<input name="org" type="text" /></label>
+        <label>Email<input name="email" type="email" required /></label>
+        <label>Phone<input name="phone" type="tel" /></label>
+        <label>City/Country<input name="city" type="text" /></label>
+        <label>Event date<input name="date" type="date" /></label>
+        <label
+          >Message<textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p>
+          <small
+            >By submitting, you agree to our
+            <a href="legal/privacy.html">Privacy Policy</a>.</small
+          >
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

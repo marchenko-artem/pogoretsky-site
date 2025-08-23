@@ -4,41 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pogoretsky — Start</title>
-
-    <!-- Иконка и стили проекта -->
     <link rel="icon" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="styles/main.css" />
-
-    <!-- Небольшие правки внешнего вида hero (легкий шрифт и смещение вниз) -->
-    <style>
-      .hero__content {
-        position: relative;
-        text-align: center;
-        color: #fff;
-        margin-top: 40vh; /* смещаем блок ниже середины, как у Joshua Bell */
-      }
-      .hero__title {
-        font-size: clamp(28px, 5vw, 64px);
-        font-weight: 300; /* лёгкий */
-        margin: 0 0 12px;
-        letter-spacing: 0.5px;
-      }
-      .hero__tag {
-        font-size: clamp(14px, 2vw, 22px);
-        font-weight: 300; /* лёгкий */
-        color: #e5e7eb;
-        margin: 0;
-      }
-    </style>
-
-    <!-- Скрипты проекта -->
     <script defer src="scripts/i18n.js"></script>
-    <script defer src="scripts/parallax.js"></script>
-    <script defer src="scripts/consent.js"></script>
     <script defer src="scripts/main.js"></script>
-
-    <!-- Прелоад hero-изображения (ускоряет LCP) -->
-    <link rel="preload" as="image" href="assets/img/hero-desktop.jpg" />
   </head>
   <body>
     <header>
@@ -49,8 +18,9 @@
         <a href="media.html" data-i18n="nav.media">Medien</a>
         <a href="press.html" data-i18n="nav.press">Presse</a>
         <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+
         <select id="lang" class="lang-select">
-          <option value="de" selected>DE</option>
+          <option value="de">DE</option>
           <option value="en">EN</option>
           <option value="pl">PL</option>
           <option value="ru">RU</option>
@@ -60,20 +30,16 @@
     </header>
 
     <main>
-      <!-- HERO: только фото + имя и подпись ниже середины, БЕЗ кнопки -->
       <section class="hero">
-        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__bg"></div>
         <div class="hero__content container">
           <h1 class="hero__title" data-i18n="hero.title">
             Volodymyr Pohoretskyi
           </h1>
-          <p class="hero__tag" data-i18n="hero.tag">
-            Concert Violinist · Europe &amp; USA
-          </p>
+          <p class="hero__tag" data-i18n="hero.tag">Concert Violinist</p>
         </div>
       </section>
 
-      <!-- Раздел 1: Bevorstehende Konzerte -->
       <section class="section">
         <div class="container">
           <h2 data-i18n="home.upcoming">Bevorstehende Konzerte</h2>
@@ -81,20 +47,13 @@
         </div>
       </section>
 
-      <!-- Раздел 2: Über den Künstler -->
       <section class="section">
         <div class="container">
           <h2 data-i18n="home.about">Über den Künstler</h2>
-          <!-- Короткая биография берётся из i18n (bio.short).
-           Если хочешь статично — замени содержимое <p> своим текстом -->
-          <p data-i18n="bio.short">
-            Volodymyr (Vladimir) Pohoretskyi, geboren 1988 in Charkiw, ist ein
-            ukrainischer Geiger …
-          </p>
+          <p data-i18n="bio.short">Fallback text…</p>
         </div>
       </section>
 
-      <!-- Раздел 3: Aktuelle Medien -->
       <section class="section">
         <div class="container">
           <h2 data-i18n="home.media">Aktuelle Medien</h2>
@@ -110,7 +69,6 @@
                 >
               </p>
             </article>
-            <!-- Добавь сюда карточки видео/аудио/фото по необходимости -->
           </div>
         </div>
       </section>
@@ -118,22 +76,11 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Pogoretsky. All rights reserved.</p>
         <p>
-          <a href="legal/impressum.html">Impressum</a> ·
-          <a href="legal/privacy.html">Privacy</a> ·
-          <a href="legal/cookies.html">Cookies</a>
+          &copy; 2025 Pogoretsky.
+          <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span>
         </p>
       </div>
     </footer>
-
-    <!-- Cookie баннер -->
-    <div class="cookie-banner">
-      <div>We use cookies for basic site functions and optional analytics.</div>
-      <div class="actions">
-        <button class="accept">Accept</button>
-        <button class="decline">Decline</button>
-      </div>
-    </div>
   </body>
 </html>
