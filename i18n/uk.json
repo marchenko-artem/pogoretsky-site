@@ -1,15 +1,16 @@
 {
   "nav.home": "Головна",
-  "nav.concerts": "Концерти",
-  "nav.about": "Біографія",
-  "nav.media": "Медіа",
-  "nav.press": "Преса",
-  "nav.contact": "Контакти",
-  "hero.title": "[Ваше ім'я]",
-  "hero.tag": "Скрипаль · Європа та США",
-  "cta.tickets": "Найближчі концерти",
-  "home.upcoming": "Найближчі концерти",
-  "home.about": "Про митця",
-  "home.media": "Останні медіа",
-  "home.contact": "Букінг і Контакти"
+  "nav.concerts": "Concerts",
+  "nav.about": "About",
+  "nav.media": "Media",
+  "nav.press": "Press",
+  "nav.contact": "Contact",
+  "home.about": "About the Artist",
+  "hero.title": "Volodymyr Pohoretskyi",
+  "hero.tag": "Concert Violinist",
+  "cta.tickets": "Upcoming Concerts",
+  "bio.short": "Volodymyr (Vladimir) Pohoretskyi, born in Kharkiv in 1988, is a Ukrainian violinist and Concertmaster of the St. Petersburg State Capella Symphony Orchestra. A graduate of the St. Petersburg Conservatory and the Bern University of the Arts, he has performed at prestigious venues including the Musikverein in Vienna, the Concertgebouw in Amsterdam, and Tokyo Opera City. [TRANSLATE_ME]",
+  "bio.medium.1": "Volodymyr (Vladimir) Pohoretskyi, born in 1988 in Kharkiv, Ukraine, is an internationally recognized violinist. Since 2011, he has been Concertmaster of the St. Petersburg State Capella Symphony Orchestra, while also appearing as Guest Concertmaster with ensembles such as Camerata Venia (Geneva). [TRANSLATE_ME]",
+  "bio.medium.2": "He studied violin at the Kharkiv Specialized Music School, the St. Petersburg Conservatory (class of Professor Antonina Kazarina), and the Bern University of the Arts (class of Professor Bartłomiej Nizioł). As a soloist, he has collaborated with orchestras including Covent Garden Soloists, Mariinsky Theatre Orchestra, and the Mikhailovsky Theatre Orchestra. His appearances include world‑renowned halls such as the Musikverein (Vienna), Concertgebouw (Amsterdam), Tokyo Opera City, and the London Coliseum. [TRANSLATE_ME]",
+  "bio.full": "<p><strong>Volodymyr (Vladimir) Pohoretskyi (violin)</strong> [TRANSLATE_ME]</p><p>Since 2011 — Concertmaster of the St. Petersburg State Capella Symphony Orchestra.<br>2012–2018 — Concertmaster of the Mikhailovsky Theatre Orchestra (St. Petersburg, Russia).<br>Since 2018 — Assistant Chief Conductor of the St. Petersburg State Capella Symphony Orchestra.<br>Since 2018 — Guest Concertmaster of the Geneva chamber orchestra <em>Camerata Venia</em>.<br>2008–2011 — Concertmaster of the Baltic Sea Youth Philharmonic (Germany). [TRANSLATE_ME]</p><p>Born in 1988 in Kharkiv, Ukraine, he began studying violin at the Kharkiv Secondary Specialized Music Boarding School (class of Lyudmila Varenina). He graduated from the Secondary Specialized Music Boarding School of the St. Petersburg State Conservatory (class of Tatiana Prasnikova), the St. Petersburg State Conservatory named after Nikolai Rimsky‑Korsakov (class of Professor Antonina Kazarina), and the Bern University of the Arts (class of Professor Bartłomiej Nizioł). [TRANSLATE_ME]</p><p>As a soloist, he has performed with orchestras such as Covent Garden Soloists, Mariinsky Theatre Orchestra, St. Petersburg State Capella, Mikhailovsky Theatre Orchestra, and <em>Camerata Venia</em> Geneva, among others. [TRANSLATE_ME]</p><p>With the Capella Symphony Orchestra and other ensembles, he has appeared at prestigious concert venues including the Musikverein in Vienna, the Concertgebouw in Amsterdam, Tokyo Opera City, Danish Radio Concert Hall in Copenhagen, Konzerthaus Berlin, London Coliseum, the Grand Hall of the St. Petersburg Philharmonia, the Bolshoi Theatre in Moscow, as well as concert halls in Rotterdam, The Hague, Milan, Stockholm, and Geneva, to name a few. [TRANSLATE_ME]</p><p>As a soloist, he was invited by the Mikhailovsky Theatre to perform in the premiere of Nacho Duato’s ballet <em>Multiplicity. Forms of Silence and Emptiness</em> set to the music of Johann Sebastian Bach. Later, he toured Great Britain with the same production together with the orchestra. [TRANSLATE_ME]</p><p>He has shared the stage with renowned musicians including Mariss Jansons, Neeme Järvi, Vladimir Ashkenazy, Vladimir Jurowski, Vasily Petrenko, Kristjan Järvi, Dmitri Jurowski, Wolfgang Emanuel Schmidt, Peter Bruns, Gregor Witt, Vladislav Chernushenko, Alexander Chernushenko, Mikhail Tatarnikov, Alexander Rudin, Andrey Baranov, Boris Andrianov, Sergey Dogadin, Sergey Levitin, and Arkady Shilkloper, among many others. [TRANSLATE_ME]</p><p>As concertmaster, he has participated in the Usedom Music Festival in Germany, the Savonlinna Opera Festival in Finland, and many other festivals across Europe. [TRANSLATE_ME]</p>"
 }

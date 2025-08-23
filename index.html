@@ -1,85 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home — Pogoretsky</title>
-  <meta name="description" content="Concert violinist official website">
-  <link rel="icon" href="/assets/icons/favicon.svg">
-  <link rel="stylesheet" href="/styles/main.css">
-  <script defer src="/scripts/i18n.js"></script>
-  <script defer src="/scripts/parallax.js"></script>
-  <script defer src="/scripts/consent.js"></script>
-  <script defer src="/scripts/main.js"></script>
-</head>
-<body>
-<header>
-  <div class="container nav">
-    <a href="/" data-i18n="nav.home">Start</a>
-    <a href="/concerts.html" data-i18n="nav.concerts">Konzerte</a>
-    <a href="/about.html" data-i18n="nav.about">Biografie</a>
-    <a href="/media.html" data-i18n="nav.media">Medien</a>
-    <a href="/press.html" data-i18n="nav.press">Presse</a>
-    <a href="/contact.html" data-i18n="nav.contact">Kontakt</a>
-    <select id="lang" class="lang-select">
-      <option value="de">DE</option>
-      <option value="en">EN</option>
-      <option value="pl">PL</option>
-      <option value="ru">RU</option>
-      <option value="uk">UK</option>
-    </select>
-  </div>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pogoretsky — Start</title>
 
-<main>
-  <section class="hero">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__content container">
-      <h1 class="hero__title" data-i18n="hero.title">[Your Name]</h1>
-      <p class="hero__tag" data-i18n="hero.tag">Concert Violinist · Europe & USA</p>
-      <a class="btn" href="/concerts.html" data-i18n="cta.tickets">Upcoming Concerts</a>
-    </div>
-  </section>
+    <!-- Иконка и стили проекта -->
+    <link rel="icon" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
 
-  <section class="section">
-    <div class="container">
-      <h2 data-i18n="home.upcoming">Upcoming Concerts</h2>
-      <div id="upcoming" class="cards"></div>
-    </div>
-  </section>
+    <!-- Небольшие правки внешнего вида hero (легкий шрифт и смещение вниз) -->
+    <style>
+      .hero__content {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-top: 40vh; /* смещаем блок ниже середины, как у Joshua Bell */
+      }
+      .hero__title {
+        font-size: clamp(28px, 5vw, 64px);
+        font-weight: 300; /* лёгкий */
+        margin: 0 0 12px;
+        letter-spacing: 0.5px;
+      }
+      .hero__tag {
+        font-size: clamp(14px, 2vw, 22px);
+        font-weight: 300; /* лёгкий */
+        color: #e5e7eb;
+        margin: 0;
+      }
+    </style>
 
-  <section class="section">
-    <div class="container">
-      <h2 data-i18n="home.about">About the Artist</h2>
-      <p>Lorem ipsum placeholder for short bio. Replace with the official 2–3 paragraph short biography in DE/EN/PL/RU/UK.</p>
-    </div>
-  </section>
+    <!-- Скрипты проекта -->
+    <script defer src="scripts/i18n.js"></script>
+    <script defer src="scripts/parallax.js"></script>
+    <script defer src="scripts/consent.js"></script>
+    <script defer src="scripts/main.js"></script>
 
-  <section class="section">
-    <div class="container">
-      <h2 data-i18n="home.media">Latest Media</h2>
-      <div class="cards">
-        <div class="card">
-          <div class="quote">“Outstanding performance — The Times”</div>
-          <p><a href="https://www.youtube.com/" target="_blank" rel="noopener">Watch on YouTube</a></p>
+    <!-- Прелоад hero-изображения (ускоряет LCP) -->
+    <link rel="preload" as="image" href="assets/img/hero-desktop.jpg" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a href="concerts.html" data-i18n="nav.concerts">Konzerte</a>
+        <a href="about.html" data-i18n="nav.about">Biografie</a>
+        <a href="media.html" data-i18n="nav.media">Medien</a>
+        <a href="press.html" data-i18n="nav.press">Presse</a>
+        <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+        <select id="lang" class="lang-select">
+          <option value="de" selected>DE</option>
+          <option value="en">EN</option>
+          <option value="pl">PL</option>
+          <option value="ru">RU</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO: только фото + имя и подпись ниже середины, БЕЗ кнопки -->
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__content container">
+          <h1 class="hero__title" data-i18n="hero.title">
+            Volodymyr Pohoretskyi
+          </h1>
+          <p class="hero__tag" data-i18n="hero.tag">
+            Concert Violinist · Europe &amp; USA
+          </p>
         </div>
+      </section>
+
+      <!-- Раздел 1: Bevorstehende Konzerte -->
+      <section class="section">
+        <div class="container">
+          <h2 data-i18n="home.upcoming">Bevorstehende Konzerte</h2>
+          <div id="upcoming" class="cards"></div>
+        </div>
+      </section>
+
+      <!-- Раздел 2: Über den Künstler -->
+      <section class="section">
+        <div class="container">
+          <h2 data-i18n="home.about">Über den Künstler</h2>
+          <!-- Короткая биография берётся из i18n (bio.short).
+           Если хочешь статично — замени содержимое <p> своим текстом -->
+          <p data-i18n="bio.short">
+            Volodymyr (Vladimir) Pohoretskyi, geboren 1988 in Charkiw, ist ein
+            ukrainischer Geiger …
+          </p>
+        </div>
+      </section>
+
+      <!-- Раздел 3: Aktuelle Medien -->
+      <section class="section">
+        <div class="container">
+          <h2 data-i18n="home.media">Aktuelle Medien</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="quote">“Outstanding performance — The Times”</div>
+              <p>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >Watch on YouTube</a
+                >
+              </p>
+            </article>
+            <!-- Добавь сюда карточки видео/аудио/фото по необходимости -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Pogoretsky. All rights reserved.</p>
+        <p>
+          <a href="legal/impressum.html">Impressum</a> ·
+          <a href="legal/privacy.html">Privacy</a> ·
+          <a href="legal/cookies.html">Cookies</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Cookie баннер -->
+    <div class="cookie-banner">
+      <div>We use cookies for basic site functions and optional analytics.</div>
+      <div class="actions">
+        <button class="accept">Accept</button>
+        <button class="decline">Decline</button>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2025 Pogoretsky. All rights reserved.</p>
-    <p><a href="/legal/impressum.html">Impressum</a> · <a href="/legal/privacy.html">Privacy</a> · <a href="/legal/cookies.html">Cookies</a></p>
-  </div>
-</footer>
-<div class="cookie-banner">
-  <div>We use cookies for basic site functions and optional analytics.</div>
-  <div class="actions">
-    <button class="accept">Accept</button>
-    <button class="decline">Decline</button>
-  </div>
-</div>
-</body>
+  </body>
 </html>
