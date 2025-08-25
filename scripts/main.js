@@ -153,6 +153,30 @@ async function initConcertsPage() {
   );
 }
 
+// ---- helper: взять ближайшие N будущих концертов ----
+async function getNextConcerts(n = 3) {
+  const all = await fetchConcerts();
+  const now = new Date();
+  return all
+    .filter((e) => new Date(e.dateTimeStart) >= now)
+    .sort((a, b) => new Date(a.dateTimeStart) - new Date(b.dateTimeStart))
+    .slice(0, n);
+}
+
+// ---- рендер тройки на главной (id="upcoming") ----
+async function initHomeUpcoming() {
+  const box = document.getElementById("upcoming");
+  if (!box) return; // нет блока — выходим
+  const next3 = await getNextConcerts(3);
+  if (next3.length === 0) {
+    box.innerHTML = `<p>${
+      I18N?.dict?.["home.upcoming.empty"] || "No upcoming concerts yet."
+    }</p>`;
+    return;
+  }
+  renderConcerts(next3, "upcoming");
+}
+
 // ===== Header behavior: transparent on hero, solid on scroll =====
 function initHeaderScroll() {
   const header = document.querySelector("header");
@@ -184,4 +208,11 @@ function initHeaderScroll() {
 document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("concerts-page")) initConcertsPage();
   initHeaderScroll();
+
+  // Главная: блок ближайших 3
+  if (document.getElementById("upcoming")) {
+    initHomeUpcoming();
+  }
+  // Поведение шапки
+  initHeaderScroll && initHeaderScroll();
 });
