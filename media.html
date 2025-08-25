@@ -37,11 +37,20 @@
       <div class="cards">
         <article class="card">
           <div class="ratio" style="position: relative; padding-top: 56.25%">
-            <iframe
-              src="https://www.youtube.com/watch?v=WLVPH8u7oKY"
+            <!-- <iframe
+              src="https://www.youtube.com/watch?v=A-IBUZJ65zo"
               title="YouTube video"
               style="position: absolute; inset: 0; width: 100%; height: 100%"
               frameborder="0"
+              allowfullscreen
+            ></iframe> -->
+            <iframe
+              src="https://www.youtube.com/embed/MMK9R_4wCo8?si=HEVu3r21skjAAlVD"
+              title="YouTube video player"
+              style="position: absolute; inset: 0; width: 100%; height: 100%"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </div>
@@ -81,5 +90,29 @@
         <button class="decline" data-i18n="cookies.decline">Decline</button>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Pogoretsky.</p>
+        <p>
+          <a href="legal/impressum.html" data-i18n="legal.impressum"
+            >Impressum</a
+          >
+          ·
+          <a href="legal/privacy.html" data-i18n="legal.privacy">Datenschutz</a>
+          · <a href="legal/cookies.html" data-i18n="legal.cookies">Cookies</a> ·
+          <a href="legal/terms.html" data-i18n="legal.terms">AGB</a>
+        </p>
+        <p>
+          <a
+            href="#"
+            class="footer-link"
+            data-action="cookies-open"
+            data-i18n="cookies.change"
+          >
+            Cookie-Einstellungen ändern
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -29,27 +29,29 @@
       </div>
     </header>
 
-    <main class="section">
+    <!-- <main class="section">
       <div class="container">
         <h1 data-i18n="nav.about">About</h1>
 
-        <!-- <h2>Short Biography</h2>
-        <p data-i18n="bio.short">Short bio…</p>
-
-        <h2>Medium Biography</h2>
-        <p data-i18n="bio.medium.1">Medium bio 1…</p>
-        <p data-i18n="bio.medium.2">Medium bio 2…</p> -->
-
-        <!-- <h2>Full Biography</h2> -->
         <div data-i18n-html="bio.full">Full bio…</div>
       </div>
-    </main>
+    </main> -->
 
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Pogoretsky. All rights reserved.</p>
+    <section class="section container about">
+      <div class="about-grid">
+        <div>
+          <h1 data-i18n="nav.about">About</h1>
+          <div data-i18n-html="bio.full">Full bio…</div>
+        </div>
+        <div>
+          <img
+            src="assets/img/about-portrait.jpg"
+            alt="Volodymyr Pohoretskyi"
+            class="about-photo"
+          />
+        </div>
       </div>
-    </footer>
+    </section>
 
     <div class="cookie-banner">
       <div data-i18n="cookies.banner.text">
@@ -60,5 +62,29 @@
         <button class="decline" data-i18n="cookies.decline">Decline</button>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Pogoretsky.</p>
+        <p>
+          <a href="legal/impressum.html" data-i18n="legal.impressum"
+            >Impressum</a
+          >
+          ·
+          <a href="legal/privacy.html" data-i18n="legal.privacy">Datenschutz</a>
+          · <a href="legal/cookies.html" data-i18n="legal.cookies">Cookies</a> ·
+          <a href="legal/terms.html" data-i18n="legal.terms">AGB</a>
+        </p>
+        <p>
+          <a
+            href="#"
+            class="footer-link"
+            data-action="cookies-open"
+            data-i18n="cookies.change"
+          >
+            Cookie-Einstellungen ändern
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -138,7 +138,24 @@ main {
   padding: 72px 0;
   border-top: 1px solid #f1f5f9;
 }
-
+/* добавляем фотки */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.about-photo {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* добавляем фотки */
 /* ====== Cards / tables / buttons */
 .cards {
   display: grid;
@@ -192,11 +209,28 @@ label {
   font-size: 12px;
   color: #334155;
 }
+/* Фото концертного зала как фон  */
+/* .page-hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.concerts-hero {
+  background: url("../assets/img/Pogoretskiy 7.jpg") center/cover no-repeat;
+} */
 
 /* ====== Footer & cookie */
+
 .footer {
-  padding: 48px 0;
-  color: var(--muted);
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 24px 24px 0 0;
+  margin-top: 80px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
   font-size: 14px;
 }
 
