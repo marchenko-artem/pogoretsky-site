@@ -222,6 +222,22 @@ label {
   background: url("../assets/img/Pogoretskiy 7.jpg") center/cover no-repeat;
 } */
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.contact-photo {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ====== Footer & cookie */
 
 .footer {

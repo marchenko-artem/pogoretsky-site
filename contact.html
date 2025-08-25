@@ -43,27 +43,36 @@
       </div>
     </header>
 
-    <main class="section container">
-      <h1 data-i18n="nav.contact" data-i18n="nav.contact">Contact</h1>
+    <main class="section container contact-grid">
+      <div>
+        <h1 data-i18n="nav.contact" data-i18n="nav.contact">Contact</h1>
 
-      <form class="card" onsubmit="sendContact(event)">
-        <label>Name<input name="name" type="text" required /></label>
-        <label>Organization<input name="org" type="text" /></label>
-        <label>Email<input name="email" type="email" required /></label>
-        <label>Phone<input name="phone" type="tel" /></label>
-        <label>City/Country<input name="city" type="text" /></label>
-        <label>Event date<input name="date" type="date" /></label>
-        <label
-          >Message<textarea name="message" rows="5" required></textarea>
-        </label>
-        <button class="btn" type="submit">Send</button>
-        <p>
-          <small
-            >By submitting, you agree to our
-            <a href="legal/privacy.html">Privacy Policy</a>.</small
-          >
-        </p>
-      </form>
+        <form class="card" onsubmit="sendContact(event)">
+          <label>Name<input name="name" type="text" required /></label>
+          <label>Organization<input name="org" type="text" /></label>
+          <label>Email<input name="email" type="email" required /></label>
+          <label>Phone<input name="phone" type="tel" /></label>
+          <label>City/Country<input name="city" type="text" /></label>
+          <label>Event date<input name="date" type="date" /></label>
+          <label
+            >Message<textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+          <p>
+            <small
+              >By submitting, you agree to our
+              <a href="legal/privacy.html">Privacy Policy</a>.</small
+            >
+          </p>
+        </form>
+      </div>
+      <div>
+        <img
+          src="assets/img/Pogoretskiy 7.jpg"
+          alt="Contact"
+          class="contact-photo"
+        />
+      </div>
     </main>
 
     <div class="cookie-banner">
@@ -75,21 +84,29 @@
         <button class="decline" data-i18n="cookies.decline">Decline</button>
       </div>
     </div>
-  <footer class="footer">
-  <div class="container">
-    <p>&copy; 2025 Pogoretsky.</p>
-    <p>
-      <a href="legal/impressum.html" data-i18n="legal.impressum">Impressum</a> ·
-      <a href="legal/privacy.html" data-i18n="legal.privacy">Datenschutz</a> ·
-      <a href="legal/cookies.html" data-i18n="legal.cookies">Cookies</a> ·
-      <a href="legal/terms.html" data-i18n="legal.terms">AGB</a>
-    </p>
-    <p>
-      <a href="#" class="footer-link" data-action="cookies-open" data-i18n="cookies.change">
-        Cookie-Einstellungen ändern
-      </a>
-    </p>
-  </div>
-</footer>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Pogoretsky.</p>
+        <p>
+          <a href="legal/impressum.html" data-i18n="legal.impressum"
+            >Impressum</a
+          >
+          ·
+          <a href="legal/privacy.html" data-i18n="legal.privacy">Datenschutz</a>
+          · <a href="legal/cookies.html" data-i18n="legal.cookies">Cookies</a> ·
+          <a href="legal/terms.html" data-i18n="legal.terms">AGB</a>
+        </p>
+        <p>
+          <a
+            href="#"
+            class="footer-link"
+            data-action="cookies-open"
+            data-i18n="cookies.change"
+          >
+            Cookie-Einstellungen ändern
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
