@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <script defer src="scripts/i18n.js"></script>
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/consent.js"></script>
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         <a href="concerts.html" data-i18n="nav.concerts">Concerts</a>
         <a href="about.html" data-i18n="nav.about">About</a>
         <a href="media.html" data-i18n="nav.media">Media</a>
-        <!-- <a href="press.html" data-i18n="nav.press">Press</a> -->
+        <a href="press.html" data-i18n="nav.press">Press</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
 
         <select id="lang" class="lang-select">
@@ -32,7 +33,7 @@
     <main class="section container">
       <h1 data-i18n="nav.press" data-i18n="nav.press">Press</h1>
 
-      <!-- <h2>Quotes</h2>
+      <h2>Quotes</h2>
       <div class="cards">
         <article class="card">
           <em>“A violinist of striking poise and depth.”</em><br /><small
@@ -44,19 +45,29 @@
             >— Frankfurter Allgemeine</small
           >
         </article>
-      </div> -->
+      </div>
 
-      <!-- <h2>Press Kit</h2>
+      <h2>Press Kit</h2>
       <ul>
         <li>
           <a href="assets/press/Pohoretskyi_Bio_EN.pdf">Biography (EN, PDF)</a>
         </li>
         <li><a href="assets/press/Photos_HiRes.zip">Press photos (ZIP)</a></li>
         <li><a href="assets/press/Tech_Rider.pdf">Technical rider (PDF)</a></li>
-      </ul> -->
-      <!-- <p>
+      </ul>
+      <p>
         <small>Links are placeholders — replace with your actual files.</small>
-      </p> -->
+      </p>
     </main>
+
+    <div class="cookie-banner">
+      <div data-i18n="cookies.banner.text">
+        We use cookies for basic site functions and optional analytics.
+      </div>
+      <div class="actions">
+        <button class="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
   </body>
 </html>

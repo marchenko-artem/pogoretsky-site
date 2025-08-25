@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <script defer src="scripts/i18n.js"></script>
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/consent.js"></script>
   </head>
   <body>
     <header>
@@ -18,7 +19,6 @@
         <a href="media.html" data-i18n="nav.media">Media</a>
         <!-- <a href="press.html" data-i18n="nav.press">Press</a> -->
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-
         <select id="lang" class="lang-select">
           <option value="en">EN</option>
           <option value="de">DE</option>
@@ -41,7 +41,6 @@
         <p data-i18n="bio.medium.2">Medium bio 2…</p> -->
 
         <!-- <h2>Full Biography</h2> -->
-        <h2>Biography</h2>
         <div data-i18n-html="bio.full">Full bio…</div>
       </div>
     </main>
@@ -51,5 +50,20 @@
         <p>&copy; 2025 Pogoretsky. All rights reserved.</p>
       </div>
     </footer>
+    <div class="container" style="text-align: center; margin-top: 8px">
+      <button class="btn" data-action="cookies-open" data-i18n="cookies.change">
+        Change cookie choice
+      </button>
+    </div>
+
+    <div class="cookie-banner">
+      <div data-i18n="cookies.banner.text">
+        We use cookies for basic site functions and optional analytics.
+      </div>
+      <div class="actions">
+        <button class="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -199,6 +199,28 @@ label {
   color: var(--muted);
   font-size: 14px;
 }
+
+.footer-link {
+  text-decoration: underline;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+  margin: 0; /* никаких «баллонов» */
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  text-underline-offset: 2px;
+}
+.footer-link:hover {
+  color: var(--text);
+}
+.footer-link:active {
+  opacity: 0.8;
+}
+.footer-link:focus-visible {
+  outline: 2px solid #94a3b8; /* заметный focus для клавиатуры */
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 .cookie-banner {
   position: fixed;
   bottom: 16px;

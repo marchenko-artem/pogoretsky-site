@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css" />
     <script defer src="scripts/i18n.js"></script>
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/consent.js"></script>
   </head>
   <body>
     <header>
@@ -70,5 +71,15 @@
         </article>
       </div>
     </main>
+
+    <div class="cookie-banner">
+      <div data-i18n="cookies.banner.text">
+        We use cookies for basic site functions and optional analytics.
+      </div>
+      <div class="actions">
+        <button class="accept" data-i18n="cookies.accept">Accept</button>
+        <button class="decline" data-i18n="cookies.decline">Decline</button>
+      </div>
+    </div>
   </body>
 </html>
